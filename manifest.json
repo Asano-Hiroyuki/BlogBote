@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "BlogNote",
+  "version": "1.0",
+  "description": "Save and search Markdown notes offline",
+  "permissions": ["downloads", "storage", "scripting", "tabs"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "host_permissions": ["<all_urls>"],
+  "options_page": "options.html",
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "readability.js",
+        "turndown.js",
+        "markdown.css",
+        "view.html",
+        "view.js"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

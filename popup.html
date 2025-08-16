@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>BlogNote</title>
+<style>
+body{width:240px;font-family:Arial;padding:10px;}
+button{width:100%;padding:8px;margin-top:6px;}
+input[type=file]{margin-top:6px;}
+</style>
+</head>
+<body>
+<h3>BlogNote</h3>
+<button id="saveBtn">Save Current Blog as Markdown</button>
+<button id="searchBtn">Search Notes</button>
+<input type="file" id="importFile" accept=".md" />
+<script src="popup.js" type="module"></script>
+<script src="readability.js"></script>
+<script src="turndown.js"></script>
+</body>
+</html>
